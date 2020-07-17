@@ -1,0 +1,219 @@
+@import 
+    url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Poppins&display=swap");
+:root {
+    --gray: #3A4454; /* rgb(58, 68, 84) */
+    --cream: #F5DDDD;
+    --violet: #6B4E71; /* rgb(107, 78, 113) */
+    --white: #fff;
+    --black: #000;
+    --lightgray: #b3b3b3;
+}
+
+/*************************
+Basic styles
+*************************/
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", serif;
+}
+.bg-light {
+    background-color: rgba(234,207,210, .8) !important;
+}
+.underline {
+    background: var(--violet) !important;
+    height: 8px;
+    margin: 20px auto;
+    width: 30%;
+}
+
+
+
+
+/*************************
+nav
+*************************/
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--violet) !important;
+    font-family: "Josefin Sans", serif;
+    letter-spacing: 2px;
+    font-style: italic;
+    
+}
+.navbar-brand:hover {
+    cursor: pointer;
+    color: var(--black) !important;
+    transition: 0.6s ease;
+}
+.navbar-brand span {
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--cream) !important;
+    background-color: var(--violet) !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.7rem 1rem;
+}
+
+/*************************
+header home
+*************************/
+.headerHome {
+    background-image: linear-gradient(rgba(107, 78, 113, .8), rgba(255,255,255, .8)), url(img/header-background.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headerHome .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headerHome .col-md-7 h1 {
+    font-size: 4rem;
+}
+.headerHome .col-md-7 h1 span {
+    font-style: italic;
+    color: var(--white);
+}
+.headerHome .col-md-7 p {
+    font-size: 1.4rem;
+}
+
+/*************************
+services
+*************************/
+.services h2 {
+    font-size: 2.2rem;
+}
+.services img {
+    padding: 30px;
+}
+.services img:hover {
+    transform: rotate(20deg);
+    transition: c
+}
+
+/*************************
+skills
+*************************/
+.skills {
+   background-image: linear-gradient(to left, rgba(107, 78, 113,.95), rgba(58, 68, 84,.95)), url(img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills h2 {
+    font-size: 3rem;
+}
+.skills h2  span {
+    color: var(--cream);
+    text-shadow: 0 0 5px var(--black);
+    font-style: italic;
+}
+.skills ul li {
+    line-height: 1.7;
+    font-size: 20px;
+}
+.skills .fa-laptop-code {
+    font-size: 10rem;
+    text-shadow: 0 0 20px var(--black);
+}
+
+/*************************
+footer
+*************************/
+footer {
+    background: var(--cream);
+    text-align: center;
+}
+footer .underline {
+    width: 3%;
+}
+footer a {
+    color: var(--violet);
+    font-size: 2.5rem;
+    margin: 15px;
+}
+footer h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+footer a:hover {
+    color: var(--gray);
+    transition-duration: 0.7s;
+}
+footer i:hover {
+    animation: footer 0.7s ease;
+}
+@keyframes footer {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*************************
+about
+*************************/
+.technologies .card {
+    border: 1px solid var(--violet);
+    box-shadow: 0 0 25px var(--lightgray);
+    margin: 10px;
+}
+.technologies .card .holder {
+    overflow: hidden;
+}
+.technologies .card img {
+    transition: transform 3s ease
+}
+.technologies .card img:hover {
+    transform: scale(1.3);
+}
+.technologies .card .card-text {
+    padding: 0 30px 40px 30px;
+}
+/*************************
+CONTACT
+*************************/
+.jubotron {
+    background-image: linear-gradient(rgba(107, 78, 113, .8), rgba(255,255,255, .99)), url(img/novisad.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.jubotron h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.contact i {
+    font-size: 3rem;
+    color: var(--violet);
+    padding-bottom: 30px;
+}
+
+
+
+
